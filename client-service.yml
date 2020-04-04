@@ -1,6 +1,7 @@
 spring:
   jpa:
     hibernate:
+      dialect: org.hibernate.dialect.MySQLDialect
       ddl-auto: update
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
