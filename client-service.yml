@@ -1,11 +1,14 @@
 spring:
   jpa:
     hibernate:
-      dialect: org.hibernate.dialect.MySQLDialect
       ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/scholarly_publishing
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/scholarly_publishing?serverTimezone=UTC
     username: root
     password: root
     
